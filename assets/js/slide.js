@@ -49,9 +49,11 @@ $(document).ready(function(){
 	
 	//hide/show controls/btns when hover
 	//pause automatic slide when hover
-	$('#slider-wrap').hover(
-	  function(){ $(this).addClass('active'); clearInterval(autoSlider); }, 
-	  function(){ $(this).removeClass('active'); autoSlider = setInterval(slideRight, 3000); }
+	$('#slider-wrap').mouseover(
+		function(){ $(this).addClass('active'); clearInterval(autoSlider); }
+	);
+	$('#slider-wrap').mouseout(
+		function(){ $(this).removeClass('active'); autoSlider = setInterval(slideRight, 3000); }
 	);
 	
 	
