@@ -7,7 +7,6 @@
 .page-box{
     min-height: calc(100vh - 290px);
     width:100%;
-    padding:10px 0px;
 }
 .com-head{
     border-bottom: 1px solid #eee;
@@ -38,10 +37,10 @@
     background: #eee;
 }
 .com-nav>li.active{
-    border-bottom: 2px solid #da251d;
+    background: #da251d;
 }
 .com-nav>li.active>a{
-    color:#da251d;
+    color:#fff;
 }
 .footer-box{
     width:100%;
@@ -101,7 +100,7 @@
         text-align: left;
     }
     .com-head-logo{
-        padding:12px;
+        padding:12px !important;
     }
     .com-head-logo>img{
         width:100px;
@@ -141,7 +140,7 @@
         text-align: center;
     }
     .com-head-logo{
-        padding:12px;
+        padding:12px !important;
     }
     .com-head-logo>img{
         width:150px;
@@ -168,7 +167,7 @@
         text-align: center;
     }
     .com-head-logo{
-        padding:15px;
+        padding:15px !important;
     }
     .com-head-logo>img{
         width:180px;
@@ -195,7 +194,7 @@
         text-align: center;
     }
     .com-head-logo{
-        padding:20px;
+        padding:20px !important;
     }
     .com-head-logo>img{
         width:210px;

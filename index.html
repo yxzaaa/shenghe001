@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="./assets/css/bootstrap.css">
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+	    <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
         <nav class='nav-box'>
@@ -15,7 +17,6 @@
                     <div class='col-lg-12 com-head-logo'>
                         <img src="./assets/img/logo.png" alt="logo">
                     </div>
-                    <div class='col-lg-12 com-head-name'>徐州圣和焊材贸易有限公司</div>
                     <div class='icon-toggle'><span class='glyphicon glyphicon-th-large'></span></div>
                 </div>
             </div>
@@ -31,6 +32,39 @@
             </div>
         </nav>
         <div class='page-box'>
+            <div id="wrapper">
+                <div id="slider-wrap">
+                    <ul id="slider">
+                        <li data-color="#1abc9c">
+                            <a href="#">
+                                <img src="./assets/img/a1.png" alt="1">
+                            </a>
+                        </li>
+                        <li data-color="#3498db">
+                            <a href="#">
+                                <img src="./assets/img/a2.png" alt="2">
+                            </a>
+                        </li>
+                        <li data-color="#3498db">
+                            <a href="#">
+                                <img src="./assets/img/a3.png" alt="2">
+                            </a>
+                        </li>
+                        <li data-color="#3498db">
+                            <a href="#">
+                                <img src="./assets/img/a4.png" alt="2">
+                            </a>
+                        </li>
+                    </ul>
+                    <!--controls-->
+                    <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+                    <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+                    <div id="pagination-wrap"><ul></ul></div>
+                    <!--controls-->                
+                </div>
+            </div>
+            <div class='pro-center'></div>
+            <div class=''></div>
         </div>
         <footer class='footer-box'>
             <div class='container com-footer'>
@@ -59,6 +93,7 @@
         </footer>
     <script type='text/javascript' src="./assets/js/jquery-3.3.1.js"></script> 
     <script type='text/javascript' src="./assets/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="./assets/js/slide.js"></script>
     <script type='text/javascript' src="./assets/js/index.js"></script>
     </body>
 </html>
