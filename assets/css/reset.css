@@ -1,0 +1,103 @@
+div{
+    box-sizing: border-box;
+}
+body{
+	-webkit-touch-callout: none; /* iOS Safari */
+
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+
+	-khtml-user-select: none; /* Konqueror */
+
+	-moz-user-select: none; /* Firefox */
+
+	-ms-user-select: none; /* Internet Explorer/Edge */
+
+	user-select: none; /* Non-prefixed version, currently
+
+	not supported by any browser */
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+	margin:0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none !important;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/   
+::-webkit-scrollbar   
+{   
+    width: 5px;   
+    height: 16px;   
+    background-color: #f8f8f8;   
+}   
+     
+/*定义滚动条轨道 内阴影+圆角*/   
+::-webkit-scrollbar-track   
+{   
+    border-radius: 0px;   
+    background-color: #f8f8f8;   
+}   
+     
+/*定义滑块 内阴影+圆角*/   
+::-webkit-scrollbar-thumb   
+{   
+    border-radius: 0px;    
+    background-color: #666;   
+}  
+
+input::-webkit-input-placeholder{
+	color:#aaa;
+
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+	color:#aaa;
+
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+	color:#aaa;
+
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+	color:#aaa;
+
+}
