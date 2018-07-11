@@ -2,9 +2,10 @@
     width:100%;
     overflow: hidden;
     background: #fff;
+    position: relative;
 }
 .page-box{
-    min-height: calc(100vh - 320px);
+    min-height: calc(100vh - 290px);
     width:100%;
     padding:10px 0px;
 }
@@ -44,7 +45,7 @@
 }
 .footer-box{
     width:100%;
-    padding:0px;
+    padding:10px;
     padding-bottom: 30px;
     background: #eee;
 }
@@ -70,8 +71,16 @@
     color:#666;
     cursor: pointer;
 }
-.footer-item>ul>li:hover{
+.footer-item>ul>li>a:hover{
     color: #da251d;
+}
+.nav-container{
+    position: relative;
+    overflow: hidden;
+}
+.show{
+    height:302px !important;
+    border-bottom: 1px solid #eee;
 }
 /* 超小屏幕（平板，小于 768px） */
 @media (max-width:767px){
@@ -86,6 +95,7 @@
         margin-bottom: 0px;
         overflow: hidden;
         height:0px;
+        transition:all .5s;
     }
     .com-head>div{
         text-align: left;
@@ -95,6 +105,23 @@
     }
     .com-head-logo>img{
         width:100px;
+    }
+    .icon-toggle{
+        width:24px;
+        height:24px;
+        position: absolute;
+        top:10px;
+        right:10px;
+        cursor: pointer;
+    }
+    .icon-toggle>span{
+        font-size: 24px;
+        color:#da251d;
+    }
+    .icon-toggle:hover>span{
+        font-size: 24px;
+        color:#da251d;
+        opacity: .6;
     }
 }
 /* 小屏幕（平板，大于等于 768px） */
@@ -118,6 +145,9 @@
     }
     .com-head-logo>img{
         width:150px;
+    }
+    .icon-toggle{
+        display: none;
     }
 }
 
@@ -143,6 +173,9 @@
     .com-head-logo>img{
         width:180px;
     }
+    .icon-toggle{
+        display: none;
+    }
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
@@ -166,5 +199,8 @@
     }
     .com-head-logo>img{
         width:210px;
+    }
+    .icon-toggle{
+        display: none;
     }
 }
