@@ -3,6 +3,8 @@
     overflow: hidden;
     background: #fff;
     position: relative;
+    transform: translateY(0px);
+    transition: all .3s;
 }
 .page-box{
     min-height: calc(100vh - 290px);
@@ -19,14 +21,6 @@
 }
 .com-head-logo>img{
     width:210px;
-}
-.com-head-name{
-    font-size: 20px;
-    color:#999;
-    font-weight: bold;
-    height:0px;
-    opacity: 0;
-    padding:0;
 }
 .com-nav>li{
     text-align: center;
@@ -81,6 +75,13 @@
     height:302px !important;
     border-bottom: 1px solid #eee;
 }
+.nav-fixed{
+    position: fixed !important;
+    top:0px;
+    left:0px;
+    z-index: 1000;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,.15);
+}
 /* 超小屏幕（平板，小于 768px） */
 @media (max-width:767px){
     .com-nav>li>a{
@@ -122,6 +123,19 @@
         color:#da251d;
         opacity: .6;
     }
+    .com-head-name{
+        width:100%;
+        text-align: center;
+        font-size: 14px;
+        color:#999;
+        font-weight: bold;
+        height:0px;
+        padding:0;
+        line-height: 42px;
+        transition: all .3s;
+        overflow: hidden;
+        padding:0px 10px;
+    }
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) and (max-width:991px){
@@ -148,6 +162,19 @@
     .icon-toggle{
         display: none;
     }
+    .com-head-name{
+    width:100%;
+    text-align: center;
+    font-size: 16px;
+    color:#999;
+    font-weight: bold;
+    height:0px;
+    padding:0;
+    line-height: 42px;
+    transition: all .3s;
+    overflow: hidden;
+    padding:0px 10px;
+}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -175,6 +202,19 @@
     .icon-toggle{
         display: none;
     }
+    .com-head-name{
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    color:#999;
+    font-weight: bold;
+    height:0px;
+    padding:0;
+    line-height: 42px;
+    transition: all .3s;
+    overflow: hidden;
+    padding:0px 10px;
+}
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
@@ -202,4 +242,17 @@
     .icon-toggle{
         display: none;
     }
+    .com-head-name{
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    color:#999;
+    font-weight: bold;
+    height:0px;
+    padding:0;
+    line-height: 42px;
+    transition: all .3s;
+    overflow: hidden;
+    padding:0px 10px;
+}
 }
