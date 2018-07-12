@@ -1,0 +1,11 @@
+.page-box .per-case{
+    background: #fff;
+}
+.per-case .item-name{
+    background: #da251d;
+}
+.per-case .item-name>p{
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
