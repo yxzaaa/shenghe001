@@ -1,0 +1,136 @@
+.pro-center{
+    padding:10px 0px;
+    background: #fff;
+}
+.item-name{
+    width:100%;
+}
+.item-name>h5{
+    text-align: center;
+    font-size: 22px;
+    color:#666;
+    padding:16px;
+    padding-bottom: 24px;
+}
+.item-name>h5>span{
+    display: inline-block;
+    margin-right: 8px;
+    color:#da251d;
+}
+.pro-list{
+    padding:0px;
+}
+.pro-list>ul{
+    width:100%;
+    margin:0px;
+}
+.pro-list>ul>li{
+    padding:10px;
+    box-sizing: border-box;
+    transition:all .3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.pro-list>ul>li:hover{
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,.2);
+}
+.pro-list>ul a{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+}
+.pro-list>ul img{
+    width:100%;
+    height:100%;
+}
+.pro-list>ul p{
+    text-align: center;
+    padding:4px 0px;
+    padding-top:8px;
+    color:#666;
+}
+.per-case .item-name>h5{
+    color:#fff;
+    padding-bottom: 12px;
+}
+.per-case .item-name>h5>span{
+    color:#fff;
+}
+.per-case .pro-list li{
+    padding:5px;
+    position: relative;
+    background: #fff;
+    border-radius: 0px;
+    border:1px solid #eee;
+}
+.per-case .pro-list li:hover{
+    position: relative;
+    z-index: 100;
+    box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.329);
+}
+.show-link{
+    width:100%;
+    line-height: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding:0px 5px;
+}
+.show-link>span{
+    color:#999;
+    font-size: 14px;
+    display: inline-block;
+    width:calc(100% - 60px);
+}
+.show-link>a{
+    display: inline-block;
+    width:60px !important;
+    line-height: 24px;
+    margin:4px 0px;
+    font-size: 12px;
+    color:#fff;
+    background: #da251d;
+    border-radius: 5px;
+    text-align: center;
+}
+.per-case{
+    padding:10px;
+    background: #da251d;
+    /* background-size: cover; */
+}
+.per-case .item-name p{
+    width:100%;
+    line-height: 40px;
+    font-size: 14px;
+    color:#eee;
+    text-align: center;
+} 
+.com-ac{
+    background: #fff;
+    padding:10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.com-ac .show-link span{
+    font-size: 16px;
+    line-height: 48px;
+}
+.com-ac .show-link a{
+    font-size: 14px;
+    width:80px !important;
+    background: #999;
+    margin:12px 0px;
+}
+/* 超小屏幕（平板，小于 768px） */
+@media (max-width:767px){
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) and (max-width:991px){
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) and (max-width:1199px){
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px){
+}
