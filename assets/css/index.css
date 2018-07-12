@@ -6,6 +6,10 @@
     transform: translateY(0px);
     transition: all .3s;
 }
+.nav-box>iframe{
+    width:100%;
+    height:100%;
+}
 .page-box{
     min-height: calc(100vh - 290px);
     width:100%;
@@ -36,11 +40,9 @@
 .com-nav>li.active>a{
     color:#fff;
 }
-.footer-box{
+.footer-box>iframe{
     width:100%;
-    padding:10px;
-    padding-bottom: 30px;
-    background: #eee;
+    height:100%;
 }
 .footer-item>h4{
     font-size: 17px;
@@ -49,18 +51,19 @@
     font-weight: 600;
 }
 .footer-item>p{
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 24px;
     color:#666;
     margin-bottom: 8px;
 }
 .footer-item>ul{
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 }
 .footer-item>ul>li{
     width:100px;
-    font-size: 13px;
+    font-size: 14px;
     color:#666;
     cursor: pointer;
 }
@@ -81,6 +84,29 @@
     left:0px;
     z-index: 1000;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,.15);
+}
+.sub-banner>img{
+    width:100%;
+    position: absolute;
+    left:50%;
+    top:0%;
+    margin-left:-50%;
+    z-index: 10;
+}
+.page-title{
+    position: absolute;
+    z-index: 20;
+    top:50%;
+    left:50%;
+    font-size: 18px;
+    color:#fff;
+    font-weight: bold;
+    line-height: 34px;
+    margin-top: -16px;
+    width:100px;
+    margin-left:-50px;
+    text-align: center;
+    border:1px solid #eee;
 }
 /* 超小屏幕（平板，小于 768px） */
 @media (max-width:767px){
@@ -127,7 +153,7 @@
         width:100%;
         text-align: center;
         font-size: 14px;
-        color:#999;
+        color:#da251d;
         font-weight: bold;
         height:0px;
         padding:0;
@@ -135,6 +161,19 @@
         transition: all .3s;
         overflow: hidden;
         padding:0px 10px;
+    }
+    .footer-box{
+        width:100%;
+        height:350px;
+        padding:10px;
+        background: #eee;
+    }
+    .sub-banner{
+        width:100%;
+        height:90px;
+        overflow: hidden;
+        padding:0px;
+        position: relative;
     }
 }
 /* 小屏幕（平板，大于等于 768px） */
@@ -163,18 +202,31 @@
         display: none;
     }
     .com-head-name{
-    width:100%;
-    text-align: center;
-    font-size: 16px;
-    color:#999;
-    font-weight: bold;
-    height:0px;
-    padding:0;
-    line-height: 42px;
-    transition: all .3s;
-    overflow: hidden;
-    padding:0px 10px;
-}
+        width:100%;
+        text-align: center;
+        font-size: 16px;
+        color:#da251d;
+        font-weight: bold;
+        height:0px;
+        padding:0;
+        line-height: 42px;
+        transition: all .3s;
+        overflow: hidden;
+        padding:0px 10px;
+    }
+    .footer-box{
+        width:100%;
+        height:250px;
+        padding:10px;
+        background: #eee;
+    }
+    .sub-banner{
+        width:100%;
+        height:120px;
+        overflow: hidden;
+        padding:0px;
+        position: relative;
+    }
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -203,18 +255,31 @@
         display: none;
     }
     .com-head-name{
-    width:100%;
-    text-align: center;
-    font-size: 18px;
-    color:#999;
-    font-weight: bold;
-    height:0px;
-    padding:0;
-    line-height: 42px;
-    transition: all .3s;
-    overflow: hidden;
-    padding:0px 10px;
-}
+        width:100%;
+        text-align: center;
+        font-size: 18px;
+        color:#da251d;
+        font-weight: bold;
+        height:0px;
+        padding:0;
+        line-height: 42px;
+        transition: all .3s;
+        overflow: hidden;
+        padding:0px 10px;
+    }
+    .footer-box{
+        width:100%;
+        height:250px;
+        padding:10px;
+        background: #eee;
+    }
+    .sub-banner{
+        width:100%;
+        height:140px;
+        overflow: hidden;
+        padding:0px;
+        position: relative;
+    }
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
@@ -243,16 +308,29 @@
         display: none;
     }
     .com-head-name{
-    width:100%;
-    text-align: center;
-    font-size: 18px;
-    color:#999;
-    font-weight: bold;
-    height:0px;
-    padding:0;
-    line-height: 42px;
-    transition: all .3s;
-    overflow: hidden;
-    padding:0px 10px;
-}
+        width:100%;
+        text-align: center;
+        font-size: 18px;
+        color:#da251d;
+        font-weight: bold;
+        height:0px;
+        padding:0;
+        line-height: 42px;
+        transition: all .3s;
+        overflow: hidden;
+        padding:0px 10px;
+    }
+    .footer-box{
+        width:100%;
+        height:250px;
+        padding:10px;
+        background: #eee;
+    }
+    .sub-banner{
+        width:100%;
+        height:160px;
+        overflow: hidden;
+        padding:0px;
+        position: relative;
+    }
 }

@@ -1,0 +1,206 @@
+/* 超小屏幕（平板，小于 768px） */
+@media (max-width:767px){
+    .com-main{
+        padding:20px;
+    }
+    .com-main ul li{
+        background: #aaa;
+        padding-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    .com-main ul li:hover{
+        background: #da251d;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+    }
+    .com-main ul span{
+        display: block;
+        font-size: 30px;
+        width:100%;
+        line-height: 100px;
+        color:#fff;
+        text-align: center;
+        transition: all .3s;
+    }
+    .com-main ul h5{
+        color:#fff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .com-main ul div{
+        width:100%;
+        height:100%;
+        color:#fff;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        opacity: 0;
+        transition: all .3s;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .com-main ul li:hover div{
+        opacity: 1;
+        line-height: 42px;
+    }
+    .com-main ul li:hover span{
+        line-height: 80px;
+    }
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) and (max-width:991px){
+    .com-main{
+        padding:20px;
+    }
+    .com-main ul li{
+        background: #aaa;
+        padding-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    .com-main ul li:hover{
+        background: #da251d;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+    }
+    .com-main ul span{
+        display: block;
+        font-size: 60px;
+        width:100%;
+        line-height: 150px;
+        color:#fff;
+        text-align: center;
+        transition: all .3s;
+    }
+    .com-main ul h5{
+        color:#fff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .com-main ul div{
+        width:100%;
+        height:100%;
+        color:#fff;
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        opacity: 0;
+        transition: all .3s;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .com-main ul li:hover div{
+        opacity: 1;
+        line-height: 52px;
+    }
+    .com-main ul li:hover span{
+        line-height: 130px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) and (max-width:1199px){
+    .com-main{
+        padding:20px;
+    }
+    .com-main ul li{
+        background: #aaa;
+        padding-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    .com-main ul li:hover{
+        background: #da251d;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+    }
+    .com-main ul span{
+        display: block;
+        font-size: 60px;
+        width:100%;
+        line-height: 150px;
+        color:#fff;
+        text-align: center;
+        transition: all .3s;
+    }
+    .com-main ul h5{
+        color:#fff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .com-main ul div{
+        width:100%;
+        height:100%;
+        color:#fff;
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        opacity: 0;
+        transition: all .3s;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .com-main ul li:hover div{
+        opacity: 1;
+        line-height: 52px;
+    }
+    .com-main ul li:hover span{
+        line-height: 130px;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px){
+    .com-main{
+        padding:20px;
+    }
+    .com-main ul li{
+        background: #aaa;
+        padding-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    .com-main ul li:hover{
+        background: #da251d;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+    }
+    .com-main ul span{
+        display: block;
+        font-size: 60px;
+        width:100%;
+        line-height: 150px;
+        color:#fff;
+        text-align: center;
+        transition: all .3s;
+    }
+    .com-main ul h5{
+        color:#fff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .com-main ul div{
+        width:100%;
+        height:100%;
+        color:#fff;
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        opacity: 0;
+        transition: all .3s;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .com-main ul li:hover div{
+        opacity: 1;
+        line-height: 52px;
+    }
+    .com-main ul li:hover span{
+        line-height: 130px;
+    }
+}

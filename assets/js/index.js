@@ -15,10 +15,12 @@ $(window).scroll(function(){
         $('.nav-box').css('transform','translateY(-'+HEIGHT+'px)');
         $('.com-head-name').height(42);
         $('.page-box').css('margin-top',$('.nav-box').height());
+        $('.icon-toggle').css('top',58);
     }else{
         $('.nav-box').removeClass('nav-fixed');
         $('.nav-box').css('transform','translateY(0px)');
         $('.com-head-name').height(0);
         $('.page-box').css('margin-top',0);
+        $('.icon-toggle').css('top',10);
     }
 })
