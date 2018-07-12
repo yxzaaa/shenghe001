@@ -4,10 +4,11 @@
     border-bottom: 1px solid #eee;
 }
 .per-case .item-name{
+    margin-top:20px;
     background: #da251d;
 }
 .per-case .item-name>p{
-    line-height: 50px;
-    font-size: 24px;
+    line-height: 60px;
+    font-size: 20px;
     font-weight: bold;
 }
