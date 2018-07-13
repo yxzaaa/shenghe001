@@ -2,8 +2,6 @@
     padding:10px 0px;
     background: #fff;
 }
-.item-name{
-}
 .item-name>h5{
     text-align: center;
     font-size: 22px;
@@ -29,6 +27,8 @@
     transition:all .3s;
     cursor: pointer;
     border-radius: 5px;
+    position: relative;
+    overflow: hidden;
 }
 .pro-list ul>li:hover{
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,.2);
@@ -72,13 +72,16 @@
     line-height: 32px;
     display: flex;
     justify-content: space-between;
-    padding:0px 5px;
+    padding:0px;
 }
 .show-link>span{
     color:#999;
     font-size: 14px;
     display: inline-block;
     width:calc(100% - 60px);
+    text-overflow: ellipsis;
+    overflow: hidden;;
+    white-space: nowrap;
 }
 .show-link>a{
     display: inline-block;
@@ -110,13 +113,13 @@
     border-bottom: 1px solid #eee;
 }
 .com-ac .show-link span{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 48px;
 }
 .com-ac .show-link a{
-    font-size: 14px;
-    width:80px !important;
-    background: #999;
+    font-size: 12px;
+    width:60px !important;
+    background: #da251d;
     margin:12px 0px;
 }
 .text-con{

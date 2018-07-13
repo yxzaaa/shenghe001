@@ -1,0 +1,39 @@
+.show-detail{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: #fff;
+    width:100%;
+    transition: all .3s;
+    opacity: 0;
+    transform: translateY(-100px);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,.2);
+}
+.pro-list li:hover .show-detail{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.show-detail>h5{
+    padding:10px;
+    font-size: 14px;
+    color:#999;
+    line-height: 24px;
+}
+.show-detail>div{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.show-detail>div>span{
+    display: block;
+    width:50%;
+    text-align: center;
+    line-height: 48px;
+    border-top:1px solid #eee;
+    box-sizing: border-box;
+    font-size: 13px;
+    color:#da251d;
+}
+.show-detail>div>span:first-child{
+    border-right:1px solid #eee;
+}
