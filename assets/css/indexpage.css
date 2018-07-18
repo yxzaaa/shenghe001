@@ -1,6 +1,7 @@
 .pro-center{
-    padding:10px 0px;
+    padding:20px 0px;
     background: #fff;
+    padding-bottom: 30px;
 }
 .item-name>h5{
     text-align: center;
@@ -38,11 +39,91 @@
     width:100%;
     height: 100%;
 }
+.pro-list ul p{
+    text-align: center;
+    padding:4px 0px;
+    padding-top:8px;
+    color:#666;
+}
 .pro-list ul img{
     width:100%;
     height:100%;
 }
-.pro-list ul p{
+.new-list{
+    padding:0px;
+}
+.new-list ul{
+    width:100%;
+    margin:0px;
+}
+.new-list .show-link{
+    width:calc(100% - 80px);
+    margin:0px;
+}
+.new-list ul>li{
+    padding:10px;
+    box-sizing: border-box;
+    transition:all .3s;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    border:1px solid #f8f8f8;
+    margin-bottom: 10px;
+}
+.new-list ul>li:hover{
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,.2);
+}
+.new-list ul a{
+    display: inline-block;
+    width:100%;
+    height:24px;
+    line-height: 24px;
+    margin:20px 0px !important;
+}
+.new-list ul a:hover{
+    background: #ff7827;
+}
+.new-list ul span{
+    padding:4px 10px;
+    padding-top:8px;
+    color:#666;
+}
+.new-list ul img{
+    width:66px;
+    height:66px;
+    padding:0px;
+    margin-right:10px;
+}
+.case-list{
+    padding:0px;
+}
+.case-list ul{
+    width:100%;
+    margin:0px;
+}
+.case-list ul>li{
+    padding:10px;
+    box-sizing: border-box;
+    transition:all .3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border:1px solid #f8f8f8;
+}
+.case-list ul>li:hover{
+    z-index: 10;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,.2);
+}
+.case-list ul a{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+}
+.case-list ul p{
     text-align: center;
     padding:4px 0px;
     padding-top:8px;
@@ -59,8 +140,8 @@
     padding:5px;
     position: relative;
     background: #fff;
-    border-radius: 0px;
-    border:1px solid #eee;
+    border-radius: 4px;
+    /* border:1px solid #eee; */
 }
 .per-case .pro-list li:hover{
     position: relative;
@@ -94,9 +175,14 @@
     border-radius: 5px;
     text-align: center;
 }
+.show-link>a:hover{
+    background: #ff7827;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+}
 .per-case{
-    padding:10px;
+    padding:20px;
     background: #da251d;
+    padding-bottom: 30px;
     /* background-size: cover; */
 }
 .per-case .item-name p{
@@ -108,8 +194,8 @@
 } 
 .com-ac{
     background: #fff;
-    padding:10px;
-    padding-bottom: 20px;
+    padding:20px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #eee;
 }
 .com-ac .show-link span{
@@ -146,20 +232,36 @@
     color: #fff; 
 }
 .kind-list ul li:hover{
-    background: #da251d;
+    background: #ff7827;
     color: #fff;
 }
 /* 超小屏幕（平板，小于 768px） */
 @media (max-width:767px){
+    .case-list ul img{
+        width:100%;
+        height:100%;
+    }
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) and (max-width:991px){
+    .case-list ul img{
+        width:100%;
+        height:228px;
+    }
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 @media (min-width: 992px) and (max-width:1199px){
+    .case-list ul img{
+        width:100%;
+        height:145px;
+    }
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
 @media (min-width: 1200px){
+    .case-list ul img{
+        width:100%;
+        height:176px;
+    }
 }

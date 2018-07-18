@@ -12,14 +12,76 @@
     font-size: 20px;
     font-weight: bold;
 }
+.more-detail{
+    padding:0px;
+}
 .detail-title{
     width:100%;
     text-align: center;
     font-size: 18px;
-    color:#999;
-    line-height: 42px;
+    color:#da251d;
+    line-height: 60px;
+    font-weight: bold;
 }
-.detail-img{
-    width:100%;
-    
+/* 超小屏幕（平板，小于 768px） */
+@media (max-width:767px){
+    .detail-img{
+        margin:0px auto;
+        width:100%;
+        padding:20px;
+        padding-top:0px;
+    }
+    .detail-img>img{
+        display: block;
+        width: 100%;
+        padding:0px;
+        margin:0px;
+    }
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) and (max-width:991px){
+    .detail-img{
+        margin:0px auto;
+        width:80%;
+        padding:20px;
+        padding-top:0px;
+    }
+    .detail-img>img{
+        display: block;
+        width: 100%;
+        padding:0px;
+        margin:0px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) and (max-width:1199px){
+    .detail-img{
+        margin:0px auto;
+        width:60%;
+        padding:20px;
+        padding-top:0px;
+    }
+    .detail-img>img{
+        display: block;
+        width: 100%;
+        padding:0px;
+        margin:0px;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px){
+    .detail-img{
+        margin:0px auto;
+        width:40%;
+        padding:20px;
+        padding-top:0px;
+    }
+    .detail-img>img{
+        display: block;
+        width: 100%;
+        padding:0px;
+        margin:0px;
+    }
 }

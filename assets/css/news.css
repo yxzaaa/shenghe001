@@ -8,6 +8,7 @@
     opacity: 0;
     transform: translateY(-100px);
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,.2);
+    overflow: hidden;
 }
 .pro-list li:hover .show-detail{
     opacity: 1;

@@ -1,43 +1,14 @@
-var newDetails = [
-    {
-        title:'',
-        content:''
-    }
-];
-var caseDetails = [
-    {
-        title:'重庆奥林匹克体育中心',
-        img:'./assets/img/cases/case1.jpg'
-    },
-    {
-        title:'重庆奥林匹克体育中心',
-        img:'./assets/img/cases/case2.jpg'
-    },
-    {
-        title:'重庆奥林匹克体育中心',
-        img:'./assets/img/cases/case3.jpg'
-    },
-    {
-        title:'重庆奥林匹克体育中心',
-        img:'./assets/img/cases/case4.jpg'
-    },
-    {
-        title:'重庆奥林匹克体育中心',
-        img:'./assets/img/cases/case5.jpg'
-    },
-    {
-        title:'重庆奥林匹克体育中心',
-        img:'./assets/img/cases/case6.jpg'
-    },
-    {
-        title:'重庆奥林匹克体育中心',
-        img:'./assets/img/cases/case7.jpg'
-    },
-    {
-        title:'重庆奥林匹克体育中心',
-        img:'./assets/img/cases/case8.jpg'
-    },
-];
+var query = window.location.search.split('?')[1].split('&');
+var queryObj = {};
+for(var i=0;i<query.length;i++){
+    var key = query[i].split('=')[0];
+    var val = query[i].split('=')[1];
+    queryObj[key] = val;
+}
+console.log(queryObj);
+if(queryObj.kind == 'case'){
+    $('.detail-title').html(caseDetails[queryObj.id].title);
+    $('.detail-img img').attr('src',caseDetails[queryObj.id].img);
+}else if(queryObj.kind == 'new'){
 
-var query = window.location.search;
-console.log(query);
+}
