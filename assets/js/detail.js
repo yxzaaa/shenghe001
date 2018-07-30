@@ -10,5 +10,12 @@ if(queryObj.kind == 'case'){
     $('.detail-title').html(caseDetails[queryObj.id].title);
     $('.detail-img img').attr('src',caseDetails[queryObj.id].img);
 }else if(queryObj.kind == 'new'){
-
+    $('.news-box-title').html(newDetails[queryObj.id].title);
+    $('.news-box-date').html(newDetails[queryObj.id].time);
+    var len = newDetails[queryObj.id].content.length;
+    var contentHtml = '';
+    for(let i=0;i<len;i++){
+        contentHtml += '<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+newDetails[queryObj.id].content[i]+'</p>';
+    }
+    $('.news-box-content').html(contentHtml);
 }

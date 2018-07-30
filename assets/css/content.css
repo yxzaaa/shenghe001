@@ -1,0 +1,29 @@
+.content-box{
+    padding:10px 0px;
+}
+#mapBox{
+    margin:15px 0px;
+    height:400px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.content-info{
+    padding:15px 10px;
+}
+.content-info>li{
+    background: #f7f7f7;
+    border:1px solid #eee;
+    border-radius: 3px;
+    line-height:42px;
+    font-size: 16px;
+    color:#666;
+    padding:5px;
+    margin-bottom: 5px;
+}
+.content-info>li>span{
+    color:#da251d;
+    display: inline-block;
+    margin:0px 10px;
+    margin-right:18px;
+}

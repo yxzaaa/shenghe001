@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/index.css">
         <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
-        <link rel="stylesheet" href="./assets/css/intro.css">
+        <link rel="stylesheet" href="./assets/css/content.css">
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KN954cOZLrVFISWAV1IIeilvCa446htO"></script>
     </head>
     <body>
         <nav class='nav-box'>
@@ -37,6 +38,23 @@
                 <img src="./assets/img/bg1.png" alt="">
                 <div class='page-title'>联系我们</div>
             </div>
+            <div class='content-box container'>
+                <div id='mapBox' class='col-md-6 col-sm-12'></div>
+                <ul class='content-info col-md-6 col-sm-12'>
+                    <li>
+                        <span class='glyphicon glyphicon-home'></span>江苏省徐州市殷庄路金地五金机电城西门对面金桥焊材
+                    </li>
+                    <li>
+                        <span class='glyphicon glyphicon-earphone'></span>0516-82182702
+                    </li>
+                    <li>
+                        <span class='glyphicon glyphicon-send'></span>销售顾问：13305203083
+                    </li>
+                    <li>
+                        <span class='glyphicon glyphicon-envelope'></span>1990xubo@163.com
+                    </li>
+                </ul>
+            </div>
         </div>
         <footer class='footer-box'>
             <iframe src="./footer.html" frameborder="0"></iframe>
@@ -44,5 +62,27 @@
     <script type='text/javascript' src="./assets/js/jquery-3.3.1.js"></script> 
     <script type='text/javascript' src="./assets/js/bootstrap.min.js"></script>
     <script type='text/javascript' src="./assets/js/index.js"></script>
+    <script>
+        var keyword = '江苏省徐州市殷庄路金地五金机电城西门对面金桥焊材';
+        var map = new BMap.Map("mapBox");    // 创建Map实例
+        var localSearch = new BMap.LocalSearch(map);
+        localSearch.enableAutoViewport(); //允许自动调节窗体大小
+        localSearch.setSearchCompleteCallback(function (searchResult) {
+    　　　　 var poi = searchResult.getPoi(0);
+            var point = new BMap.Point(poi.point.lng,poi.point.lat);
+    　　　　 map.centerAndZoom(point, 15);
+            var marker = new BMap.Marker(point);        // 创建标注    
+            map.addOverlay(marker); 
+    　　});
+　　    localSearch.search(keyword);
+        //添加地图类型控件
+        map.addControl(new BMap.MapTypeControl({
+            mapTypes:[
+                BMAP_NORMAL_MAP,
+                BMAP_HYBRID_MAP
+            ]}));	  
+        map.setCurrentCity("徐州");          // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+    </script>
     </body>
 </html>

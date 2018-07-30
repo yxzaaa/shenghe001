@@ -38,3 +38,29 @@
 .show-detail>div>span:first-child{
     border-right:1px solid #eee;
 }
+.news-box{
+    padding:10px 0px;
+}
+.news-box-title{
+    text-align: center;
+    font-size: 20px;
+    color:#da251d;
+    line-height: 48px;
+    font-weight: bold;
+}
+.news-box-date{
+    text-align: center;
+    font-size: 14px;
+    color:#aaa;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.news-box-content{
+    padding:5px 10px;
+}
+.news-box-content>p{
+    color:#999;
+    line-height: 28px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}

@@ -24,3 +24,6 @@ $(window).scroll(function(){
         $('.icon-toggle').css('top',10);
     }
 })
+function linkTo(link){
+    window.open(link,'_self');
+}

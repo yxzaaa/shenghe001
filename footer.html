@@ -29,20 +29,24 @@
                 <div class='col-xs-12 col-sm-6 col-md-6 footer-item'>
                     <h4>相关链接</h4>
                     <ul>
-                        <li><a>公司简介</a></li>
-                        <li><a>产品中心</a></li>
-                        <li><a>客户案例</a></li>
+                        <li data-link='./intro.html'><a>公司简介</a></li>
+                        <li data-link='./center.html'><a>产品中心</a></li>
+                        <li data-link='./case.html'><a>客户案例</a></li>
                     </ul>
                     <ul>
-                        <li><a>公司动态</a></li>
-                        <li><a>联系我们</a></li>
+                        <li data-link='./news.html'><a>公司动态</a></li>
+                        <li data-link='./content.html'><a>联系我们</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     <script type='text/javascript' src="./assets/js/jquery-3.3.1.js"></script> 
     <script type='text/javascript' src="./assets/js/bootstrap.min.js"></script>
-    <script type='text/javascript' src="./assets/js/slide.js"></script>
-    <script type='text/javascript' src="./assets/js/index.js"></script>
+    <script>
+        $('.footer-item li').click(function(){
+            var link = $(this).attr('data-link');
+            window.parent.linkTo(link);
+        })
+    </script>
     </body>
 </html>

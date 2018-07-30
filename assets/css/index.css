@@ -108,6 +108,34 @@
     text-align: center;
     border:1px solid #eee;
 }
+.fixed-info{
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    background: #f7f7f7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
+    z-index:1000;
+    padding:10px;
+    border-radius: 4px;
+}
+.fixed-info h4{
+    line-height: 34px;
+    font-size: 18px;
+    color:#da251d;
+    font-weight: bold;
+    text-align: center;
+}
+.fixed-info p{
+    line-height: 28px;
+    font-weight: 14px;
+    color:#666;
+}
+.fixed-info span{
+    display: inline-block;
+    margin-right:5px;
+    font-weight: 16px !important;
+    color:#da251d;
+}
 /* 超小屏幕（平板，小于 768px） */
 @media (max-width:767px){
     .com-nav>li>a{
@@ -175,6 +203,9 @@
         padding:0px;
         position: relative;
     }
+    .fixed-info{
+        display: none;
+    }
 }
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) and (max-width:991px){
@@ -226,6 +257,9 @@
         overflow: hidden;
         padding:0px;
         position: relative;
+    }
+    .fixed-info{
+        display: none;
     }
 }
 
