@@ -164,7 +164,7 @@
         width:24px;
         height:24px;
         position: absolute;
-        top:10px;
+        top:12px;
         right:10px;
         cursor: pointer;
     }
@@ -194,7 +194,9 @@
         width:100%;
         height:350px;
         padding:10px;
-        background: #eee;
+        background: #f8f8f8;
+        border-top:1px solid #eee;
+        overflow:hidden;
     }
     .sub-banner{
         width:100%;
@@ -249,7 +251,9 @@
         width:100%;
         height:250px;
         padding:10px;
-        background: #eee;
+        background: #f8f8f8;
+        border-top:1px solid #eee;
+        overflow:hidden;
     }
     .sub-banner{
         width:100%;
@@ -305,7 +309,9 @@
         width:100%;
         height:250px;
         padding:10px;
-        background: #eee;
+        background: #f8f8f8;
+        border-top:1px solid #eee;
+        overflow:hidden;
     }
     .sub-banner{
         width:100%;
@@ -358,7 +364,9 @@
         width:100%;
         height:250px;
         padding:10px;
-        background: #eee;
+        background: #f8f8f8;
+        border-top:1px solid #eee;
+        overflow:hidden;
     }
     .sub-banner{
         width:100%;

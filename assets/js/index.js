@@ -21,7 +21,7 @@ $(window).scroll(function(){
         $('.nav-box').css('transform','translateY(0px)');
         $('.com-head-name').height(0);
         $('.page-box').css('margin-top',0);
-        $('.icon-toggle').css('top',10);
+        $('.icon-toggle').css('top',12);
     }
 })
 function linkTo(link){
