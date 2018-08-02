@@ -20,7 +20,7 @@ $('.kind-list ul').on('click','li',function(){
 })
 function fillPros(kind){
     var proHtml = '';
-    for(let i=0;i<products.length;i++){
+    for(var i=0;i<products.length;i++){
         if(products[i].kind == kind){
             proHtml += "<li class='col-md-3 col-sm-6 col-xs-12'><a href='javascript:;'><img src='"+products[i].img+"' alt='product'><p>"+products[i].name+"</p></a></li>";
         }

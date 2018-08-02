@@ -9,8 +9,8 @@ $(document).ready(function(){
     $('[data-ac=active]').addClass('active');
 })
 $(window).scroll(function(){
-    var HEIGHT = $('.com-head-logo').height() + 2*parseInt($('.com-head-logo').css('padding'));
-    if($(window).scrollTop() >= 5){
+    var HEIGHT = $('.com-head-logo').height() + 2*parseInt($('.com-head-logo').css('padding-top'));
+    if($(window).scrollTop() >= 1){
         $('.nav-box').addClass('nav-fixed');
         $('.nav-box').css('transform','translateY(-'+HEIGHT+'px)');
         $('.com-head-name').height(42);

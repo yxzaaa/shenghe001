@@ -4,7 +4,7 @@
     background: #fff;
     position: relative;
     transform: translateY(0px);
-    transition: all .3s;
+    transition: all 1s;
 }
 .nav-box>iframe{
     width:100%;
@@ -186,7 +186,7 @@
         height:0px;
         padding:0;
         line-height: 42px;
-        transition: all .3s;
+        transition: all 1s;
         overflow: hidden;
         padding:0px 10px;
     }
@@ -243,7 +243,7 @@
         height:0px;
         padding:0;
         line-height: 42px;
-        transition: all .3s;
+        transition: all 1s;
         overflow: hidden;
         padding:0px 10px;
     }
@@ -301,7 +301,7 @@
         height:0px;
         padding:0;
         line-height: 42px;
-        transition: all .3s;
+        transition: all 1s;
         overflow: hidden;
         padding:0px 10px;
     }
@@ -356,7 +356,7 @@
         height:0px;
         padding:0;
         line-height: 42px;
-        transition: all .3s;
+        transition: all 1s;
         overflow: hidden;
         padding:0px 10px;
     }

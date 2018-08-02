@@ -1,5 +1,5 @@
 var newHtml = '';
-for(let i=0;i<newDetails.length;i++){
+for(var i=0;i<newDetails.length;i++){
     newHtml +=  "<li class='col-md-3 col-sm-6 col-xs-12'>";
     newHtml +=  "<div class='show-detail'><h5>"+newDetails[i].subTitle+"</h5>";
     newHtml +=  "<div><span class='glyphicon glyphicon-thumbs-up'>&nbsp;"+newDetails[i].count+"</span>";

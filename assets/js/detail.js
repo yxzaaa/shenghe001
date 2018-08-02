@@ -14,7 +14,7 @@ if(queryObj.kind == 'case'){
     $('.news-box-date').html(newDetails[queryObj.id].time);
     var len = newDetails[queryObj.id].content.length;
     var contentHtml = '';
-    for(let i=0;i<len;i++){
+    for(var i=0;i<len;i++){
         contentHtml += '<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+newDetails[queryObj.id].content[i]+'</p>';
     }
     $('.news-box-content').html(contentHtml);
