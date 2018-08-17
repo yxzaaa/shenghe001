@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>联系我们-徐州圣和焊材贸易有限公司</title>
+        <title>联系我们-江苏圣和焊材贸易有限公司</title>
         <link rel="stylesheet" href="./assets/css/bootstrap.css">
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/index.css">
@@ -18,18 +18,17 @@
                     <div class='col-lg-12 com-head-logo'>
                         <img src="./assets/img/logo.png" alt="logo">
                     </div>
-                    <div class='com-head-name'>徐州圣和焊材贸易有限公司</div>
-                    <div class='icon-toggle'><span class='glyphicon glyphicon-th-large'></span></div>
+                    <div class='com-head-name'>江苏圣和焊材贸易有限公司</div>
                 </div>
             </div>
             <div class='container nav-container'>
                 <ul class='row com-nav'>
-                    <li class='col-sm-2 col-md-2 col-lg-2'><a href='./index.html'>首页</a></li>
-                    <li class='col-sm-2 col-md-2 col-lg-2'><a href='./intro.html'>公司简介</a></li>
-                    <li class='col-sm-2 col-md-2 col-lg-2'><a href='./center.html'>产品中心</a></li>
-                    <li class='col-sm-2 col-md-2 col-lg-2'><a href='./case.html'>客户案例</a></li>
-                    <li class='col-sm-2 col-md-2 col-lg-2'><a href='./news.html'>公司动态</a></li>
-                    <li class='col-sm-2 col-md-2 col-lg-2' data-ac='active'><a href='./content.html'>联系我们</a></li>
+                    <li class='col-xs-4 col-sm-2 col-md-2 col-lg-2'><a href='./index.html'>首页</a></li>
+                    <li class='col-xs-4 col-sm-2 col-md-2 col-lg-2'><a href='./intro.html'>公司简介</a></li>
+                    <li class='col-xs-4 col-sm-2 col-md-2 col-lg-2'><a href='./center.html'>产品中心</a></li>
+                    <li class='col-xs-4 col-sm-2 col-md-2 col-lg-2'><a href='./case.html'>客户案例</a></li>
+                    <li class='col-xs-4 col-sm-2 col-md-2 col-lg-2'><a href='./news.html'>公司动态</a></li>
+                    <li class='col-xs-4 col-sm-2 col-md-2 col-lg-2' data-ac='active'><a href='./content.html'>联系我们</a></li>
                 </ul>
             </div>
         </nav>
@@ -59,30 +58,24 @@
         <footer class='footer-box'>
             <iframe src="./footer.html" frameborder="0"></iframe>
         </footer>
+        <div class='fixed-info'>
+            <h4>销售顾问</h4><p><span class='glyphicon glyphicon-earphone'></span>133-0520-3083</p>
+        </div>
     <script type='text/javascript' src="./assets/js/jquery-3.3.1.js"></script> 
     <script type='text/javascript' src="./assets/js/bootstrap.min.js"></script>
     <script type='text/javascript' src="./assets/js/index.js"></script>
     <script>
-        var keyword = '江苏省徐州市殷庄路金地五金机电城西门对面金桥焊材';
         var map = new BMap.Map("mapBox");    // 创建Map实例
-        var localSearch = new BMap.LocalSearch(map);
-        localSearch.enableAutoViewport(); //允许自动调节窗体大小
-        localSearch.setSearchCompleteCallback(function (searchResult) {
-    　　　　 var poi = searchResult.getPoi(0);
-            var point = new BMap.Point(poi.point.lng,poi.point.lat);
-    　　　　 map.centerAndZoom(point, 15);
-            var marker = new BMap.Marker(point);        // 创建标注    
-            map.addOverlay(marker); 
-    　　});
-　　    localSearch.search(keyword);
-        //添加地图类型控件
-        map.addControl(new BMap.MapTypeControl({
-            mapTypes:[
-                BMAP_NORMAL_MAP,
-                BMAP_HYBRID_MAP
-            ]}));	  
-        map.setCurrentCity("徐州");          // 设置地图显示的城市 此项是必须设置的
-        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        var myGeo = new BMap.Geocoder();
+        // 将地址解析结果显示在地图上,并调整地图视野
+        myGeo.getPoint("江苏省徐州市殷庄路金地五金机电城西门对面金桥焊材", function (point) {
+            if (point) {
+                map.centerAndZoom(point, 16);
+                map.addOverlay(new BMap.Marker(point));
+            } else {
+                alert("您选择地址没有解析到结果!");
+            }
+        }, "徐州市");
     </script>
     </body>
 </html>

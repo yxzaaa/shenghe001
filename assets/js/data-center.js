@@ -47,7 +47,7 @@ var newDetails = [
     {
         title:'暖通供热采暖：塑料管采用焊接接口工艺是什么',
         subTitle:'塑料管连接采用对口焊接主要是利用一套塑料焊接设备，设备主要由空气压缩机、空气过滤器、电源、调压器及焊炬焊条等组成。,操作人员需认真对待。',
-        img:'./assets/img/news/news.png',
+        img:'./assets/img/news/news3.png',
         time:'2018-6-11',
         count:'878',
         content:[
@@ -65,7 +65,7 @@ var newDetails = [
     {
         title:'我国首个电站锅炉国家重点实验室落户哈尔滨',
         subTitle:'近日，以哈尔滨锅炉厂为依托的高效清洁燃煤电站锅炉国家重点实验室正式获批，成为国内第一家电站锅炉国家重点实验室。',
-        img:'./assets/img/news/news1.png',
+        img:'./assets/img/news/news4.png',
         time:'2018-6-11',
         count:'677',
         content:[
@@ -76,7 +76,7 @@ var newDetails = [
     {
         title:'我国设立船舶排空控制区',
         subTitle:'从今年起，我国在珠三角、长三角、环渤海水域设立了三个船舶大气污染物排放控制区，交通运输部海事局巡视员李青平说，这一举措是通过控制船舶废气的排放',
-        img:'./assets/img/news/news2.png',
+        img:'./assets/img/news/news5.png',
         time:'2018-6-11',
         count:'539',
         content:[

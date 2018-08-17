@@ -4,7 +4,6 @@
     background: #fff;
     position: relative;
     transform: translateY(0px);
-    transition: all 1s;
 }
 .nav-box>iframe{
     width:100%;
@@ -30,6 +29,7 @@
     text-align: center;
     line-height: 50px;
     cursor: pointer;
+    border-bottom:1px solid #eee;
 }
 .com-nav>li:hover{
     background: #eee;
@@ -110,23 +110,27 @@
 }
 .fixed-info{
     position: fixed;
-    bottom:20px;
-    right:20px;
+    top:0px;
+    right:10px;
     background: #f7f7f7;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
     z-index:1000;
     padding:10px;
-    border-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display:flex;
+    justify-content:flex-start;
 }
 .fixed-info h4{
-    line-height: 34px;
+    line-height: 24px;
     font-size: 18px;
     color:#da251d;
     font-weight: bold;
     text-align: center;
+    margin-right:10px;
 }
 .fixed-info p{
-    line-height: 28px;
+    line-height:24px;
     font-weight: 14px;
     color:#666;
 }
@@ -148,8 +152,6 @@
     .com-nav{
         margin-bottom: 0px;
         overflow: hidden;
-        height:0px;
-        transition:all .5s;
     }
     .com-head>div{
         text-align: left;
@@ -186,7 +188,6 @@
         height:0px;
         padding:0;
         line-height: 42px;
-        transition: all 1s;
         overflow: hidden;
         padding:0px 10px;
     }
@@ -205,8 +206,8 @@
         padding:0px;
         position: relative;
     }
-    .fixed-info{
-        display: none;
+    .fixed-info h4{
+        display:none;
     }
 }
 /* 小屏幕（平板，大于等于 768px） */
@@ -243,7 +244,6 @@
         height:0px;
         padding:0;
         line-height: 42px;
-        transition: all 1s;
         overflow: hidden;
         padding:0px 10px;
     }
@@ -261,9 +261,6 @@
         overflow: hidden;
         padding:0px;
         position: relative;
-    }
-    .fixed-info{
-        display: none;
     }
 }
 
@@ -301,7 +298,6 @@
         height:0px;
         padding:0;
         line-height: 42px;
-        transition: all 1s;
         overflow: hidden;
         padding:0px 10px;
     }
@@ -356,7 +352,6 @@
         height:0px;
         padding:0;
         line-height: 42px;
-        transition: all 1s;
         overflow: hidden;
         padding:0px 10px;
     }

@@ -8,7 +8,7 @@ for(var i=0;i<banners.length;i++){
 }
 for(var i=0;i<products.length;i++){
     if(i<4){
-        proHtml += "<li class='col-md-3 col-sm-6 col-xs-12'><a href='./center.html'><img src='"+products[i].img+"' alt='product'><p>"+products[i].name+"</p></a></li>";
+        proHtml += "<li class='col-md-3 col-sm-6 col-xs-6'><a href='./center.html'><img src='"+products[i].img+"' alt='product'><p>"+products[i].name+"</p></a></li>";
     }
 }
 for(var i=0;i<caseDetails.length;i++){
