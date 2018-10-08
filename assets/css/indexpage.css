@@ -3,6 +3,20 @@
     background: #fff;
     padding-bottom: 30px;
 }
+.pro-kind>h5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color:#da251d;
+    padding:14px;
+    line-height: 28px;
+    border: 1px solid #eee;
+}
+.pro-kind>h5>span{
+    display: inline-block;
+    margin-right: 8px;
+    color:#da251d;
+}
 .item-name>h5{
     text-align: center;
     font-size: 22px;
@@ -219,23 +233,20 @@
 }
 .kind-list{
     overflow-y: auto;
-    max-height: 50px;
+    /* max-height: 50px; */
     margin-bottom: 10px;
 }
 .kind-list ul li{
     text-align: center;
     line-height: 50px;
-    background: #eee;
-    color:#999;
+    background: #fafafa;
+    color:#777;
     cursor: pointer;
 }
 .kind-list ul li.active{
     background: #da251d;
     color: #fff; 
-}
-.kind-list ul li:hover{
-    background: #ff7827;
-    color: #fff;
+    border-radius: 5px;
 }
 /* 超小屏幕（平板，小于 768px） */
 @media (max-width:767px){

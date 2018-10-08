@@ -15,7 +15,7 @@ $('.kind-list ul').on('click','li',function(){
         })
         that.siblings().removeClass('active');
         that.addClass('active');
-        $('.item-name h5').html('<span class="glyphicon glyphicon-align-right"></span>'+that.html());
+        // $('.item-name h5').html('<span class="glyphicon glyphicon-align-right"></span>'+that.html());
     }
 })
 function fillPros(kind){
